@@ -18,7 +18,7 @@ sudo sed -i 's/# ResourceDisk.MountPoint=\/mnt\/resource/ResourceDisk.MountPoint
 sudo systemctl restart walinuxagent
 
 # Disable root login
-#sudo sed -i 's/PermitRootLogin yes/PermitRootLogin no/' /etc/ssh/sshd_config
+sudo sed -i 's/PermitRootLogin yes/PermitRootLogin no/' /etc/ssh/sshd_config
 
 # Restart SSH service to apply changes
 sudo systemctl restart sshd
